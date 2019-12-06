@@ -532,8 +532,10 @@ dd + dt {
 /* Quotes ------------------------------------ */
 
 blockquote {
-	border-color: #cd2653;
-	border-style: solid;
+	/*border-color: #cd2653;
+	border-style: solid;*/
+
+    border: 2px solid #e9ecef;
 
 	/*rtl:ignore*/
 	border-width: 0 0 0 0.2rem;
@@ -542,7 +544,10 @@ blockquote {
 	margin: 4rem 0;
 
 	/*rtl:ignore*/
-	padding: 0.5rem 0 0.5rem 2rem;
+	/*padding: 0.5rem 0 0.5rem 2rem;*/
+    padding: 1.5rem 1rem;
+    border-radius: .25rem;
+    box-shadow: 0.5rem 0.5rem 0 rgba(222,226,230,.5);
 }
 
 cite {
@@ -1067,7 +1072,7 @@ button.toggle {
 .border-color-accent,
 .border-color-accent-hover:focus,
 .border-color-accent-hover:hover {
-	border-color: #cd2653;
+	border-color: #e9ecef;
 }
 
 /* FILL COLOR */
@@ -3486,7 +3491,8 @@ figure.wp-block-table.is-style-stripes {
 .entry-content dl,
 .entry-content dt {
 	/* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; */
-    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft      YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    /*font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;*/
+	font-family: -apple-system, BlinkMacSystemFont, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
 	letter-spacing: normal;
 }
 
@@ -6326,4 +6332,25 @@ a.to-the-top > * {
 	.wp-block-pullquote.is-style-solid-color.alignright::before {
 		top: 0;
 	}
+}
+code:not([class*=language-]) {
+    color: #ff1744;
+    border-radius: .25rem;
+    border-radius: .25rem;
+}
+::selection {
+    background-color: #00f !important;
+    color: #fff;
+}
+a {
+    text-decoration: none !important;
+    border-bottom: 2px solid rgba(0,0,255,.1);
+    font-weight: 600;
+    transition: all .25s ease-out;
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #ff1744;
+    font-weight: 600;
+    transition: all .25s ease-out;
 }

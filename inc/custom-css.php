@@ -74,7 +74,7 @@ if ( ! function_exists( 'twentytwenty_get_customizer_css' ) ) {
 
 		// Background.
 		$background         = sanitize_hex_color_no_hash( get_theme_mod( 'background_color' ) );
-		$background_default = 'f5efe0';
+		$background_default = 'f8f9fa';
 
 		ob_start();
 
